@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controleur.ControleurNouvelEquipier">
+   <children>
+      <TextField fx:id="nomEquipier" layoutX="279.0" layoutY="122.0" promptText="Dupont" />
+      <TextField fx:id="prenomEquipier" layoutX="279.0" layoutY="164.0" promptText="Paul" />
+      <TextField fx:id="loginEquipier" layoutX="279.0" layoutY="207.0" promptText="dupont" />
+      <Button layoutX="365.0" layoutY="332.0" mnemonicParsing="false" onMouseClicked="#enregistrerCreation" text="Valider" />
+      <Label layoutX="171.0" layoutY="126.0" text="Nom : " />
+      <Label layoutX="171.0" layoutY="168.0" text="Prénom : " />
+      <Label layoutX="171.0" layoutY="211.0" text="Identifiant  :" />
+      <Label layoutX="190.0" layoutY="39.0" text="Création d'équipiers ">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="validerCreation" layoutX="194.0" layoutY="332.0" mnemonicParsing="false" onMouseClicked="#retour" text="Retour" />
+      <TextField fx:id="posteEquipier" layoutX="279.0" layoutY="254.0" promptText="développeur Java" />
+      <Label layoutX="171.0" layoutY="258.0" text="Poste :" />
+   </children>
+</AnchorPane>

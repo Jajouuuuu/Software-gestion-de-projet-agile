@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controleur.ControleurIteration">
+   <children>
+      <ScrollPane fx:id="scroll" prefHeight="700.0" prefWidth="1000.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="701.0" prefWidth="999.0">
+               <children>
+                  <Pane fx:id="pane" layoutY="1.0" prefHeight="700.0" prefWidth="1000.0">
+                     <children>
+                        <Text fx:id="name" layoutX="455.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Itération du projet :" />
+                        <TitledPane fx:id="titledPane" collapsible="false" layoutX="70.0" layoutY="113.0" prefHeight="458.0" prefWidth="216.0" text="Liste d'attentes">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="222.0" prefWidth="142.0">
+                                 <children>
+                                    <ScrollPane fx:id="scrollAttente" hbarPolicy="NEVER" prefHeight="432.0" prefWidth="217.0" vbarPolicy="ALWAYS">
+                                       <content>
+                                          <AnchorPane fx:id="anchorAttente" prefHeight="432.0" prefWidth="204.0" />
+                                       </content>
+                                    </ScrollPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </TitledPane>
+                        <Button layoutX="45.0" layoutY="33.0" mnemonicParsing="false" onMouseClicked="#versDashboard" text="Dashboard projet" />
+                        <Button layoutX="78.0" layoutY="604.0" mnemonicParsing="false" onAction="#placementAutoAttentes" prefHeight="47.0" prefWidth="197.0" text="Calculer automatiquement le placement des attentes" wrapText="true" />
+                        <Button alignment="CENTER" contentDisplay="CENTER" layoutX="784.0" layoutY="604.0" mnemonicParsing="false" onAction="#nouvelleIteration" prefHeight="47.0" prefWidth="143.0" text="Ajouter une nouvelle itération" wrapText="true" />
+                        <Button alignment="CENTER" contentDisplay="CENTER" layoutX="592.0" layoutY="604.0" mnemonicParsing="false" onAction="#retirerIteration" prefHeight="47.0" prefWidth="134.0" text="Retirer la dernière itération" wrapText="true" />
+                        <Button alignment="CENTER" contentDisplay="CENTER" layoutX="366.0" layoutY="602.0" mnemonicParsing="false" onAction="#avancerPasValides" prefHeight="49.0" prefWidth="144.0" text="Avancer attentes non validées" wrapText="true" />
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
